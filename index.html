@@ -1,1 +1,656 @@
-test
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Optima Tech AI</title>
+    <style>
+		.typewriter {
+			font-size: 32px;
+			font-family: Verdana;
+			border-right: 8px solid #ff00fc;
+			white-space: nowrap;
+			overflow: hidden;
+			-webkit-animation: typing 4s steps(20, end), blink-caret .75s step-end infinite;
+			animation: typing 4s steps(20, end), blink-caret .75s step-end infinite;
+		}
+
+		/* The typing effect */
+		@keyframes typing {
+			from { width: 0 }
+			to { width: 100% }
+		}
+
+		@-webkit-keyframes typing {
+			from { width: 0 }
+			to { width: 100% }
+		}
+
+		/* The typewriter caret/blinking cursor */
+		@keyframes blink-caret {
+			from, to { border-color: transparent }
+			50% { border-color: #4b27ff; }
+		}
+
+		@-webkit-keyframes blink-caret {
+			from, to { border-color: transparent }
+			50% { border-color: #ffffff; }
+		}
+
+
+		.container {
+			position: relative;
+			top: 0;
+			left: -343;
+		}
+		.image {
+			position: absolute;
+			z-index: 1;
+		}
+		.image.back {
+			top: 2;
+			animation: spin 10s infinite linear;
+			z-index: 0;
+		}
+		@keyframes spin {
+			from { transform: rotate(0deg); }
+			to { transform: rotate(360deg); }
+		}
+	</style>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        header img {
+            width: 300px;
+            height: 60px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            flex: 1;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        section {
+            padding: 40px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+            font-size: 40px;
+            margin-top: 0px;
+            margin-bottom: 5px;
+        }
+        .service-container, .team-container, .contact-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .service-item, .team-member, .contact-item {
+            width: 45%;
+            margin: 20px 0;
+        }
+        .team-member img {
+            border-radius: 50%;
+            width: 140px;
+            height: 140px;
+            margin-right: 20px;
+        }
+        .team-member {
+            display: flex;
+            align-items: center;
+        }
+        .team-member div {
+            flex: 1;
+        }
+        .service-item pre {
+            display: none;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        .service-item button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .service-item button:hover {
+            background-color: #575757;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        /* Contact Section - Adjusted width for better text area */
+        .contact-container img {
+            width: 640px;
+            height: 450px;
+            margin-right: 20px;
+        }
+        .about-img {
+    width: 1280px;
+    height: 620px;
+}
+        .contact-container, .about-section {
+            margin-bottom: 40px;
+        }
+        .contact-container div {
+            flex: 2;
+        }
+        /* Flexbox layout adjustments to ensure responsiveness */
+        .contact-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+        .contact-item {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.about-section img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: top;
+    flex: 1;
+}
+
+        /* Mobile responsiveness */
+        [at]media screen and (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+            .service-container, .team-container, .contact-container {
+                flex-direction: column;
+            }
+            .service-item, .team-member, .contact-item {
+                width: 100%;
+            }
+            .contact-container img, .about-img {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo.png" alt="Optima Tech AI Logo">
+    <h1>
+        <script>
+            const imageFront = document.querySelector('.image:not(.back)');
+            const imageBack = document.querySelector('.image.back');
+            
+            imageFront.addEventListener('mouseenter', () => {
+              imageBack.style.animationDuration = '0.8s';
+            });
+            
+            imageFront.addEventListener('mouseleave', () => {
+              imageBack.style.animationDuration = '10s';
+            });
+              </script>
+            <span class="typewriter" style="color: #ff00fc;"></span>
+            <script>
+              let texts = [
+                'Welcome to Optima Tech AI',
+                'Custom AI Solutions for Business Optimization.',
+                'Predictive Analytics and Data Insights.',
+                'Natural Language Processing (NLP) for Enhanced Customer Interaction.',
+                'Computer Vision for Real-Time Object Detection and Visual Analysis.',
+                'Machine Learning for Process Automation and Efficiency.',
+                'AI-Powered Chatbots for Customer Support and Engagement.'
+              ];
+              let index = 0;
+              let requestId = null;
+              let isTyping = false;
+              let isDeleting = false;
+              let typingSpeed = 100;
+              let deletingSpeed = 50;
+              let pauseTime = 2500;
+              let waitTime = 100;
+            
+              function startTypewriter() {
+                if (isTyping || isDeleting) return;
+                cancelAnimationFrame(requestId);
+                isTyping = true;
+                document.querySelector('.typewriter').classList.remove('cursor');
+                setTimeout(function() {
+                  if (!isDeleting && isTyping) {
+                    requestId = requestAnimationFrame(type);
+                  }
+                }, waitTime);
+              }
+            
+              function type() {
+                let text = texts[index];
+                let length = text.length;
+                if (isTyping && length > document.querySelector('.typewriter').textContent.length) {
+                  document.querySelector('.typewriter').textContent += text.charAt(document.querySelector('.typewriter').textContent.length);
+                  requestId = requestAnimationFrame(type);
+                } else {
+                  isTyping = false;
+                  isDeleting = true;
+                  document.querySelector('.typewriter').classList.add('cursor');
+                  setTimeout(function() {
+                    requestId = requestAnimationFrame(deleteChar);
+                  }, pauseTime);
+                }
+              }
+            
+              function deleteChar() {
+                let text = texts[index];
+                let length = text.length;
+                if (isDeleting && document.querySelector('.typewriter').textContent.length > 0) {
+                  document.querySelector('.typewriter').textContent = document.querySelector('.typewriter').textContent.substring(0, document.querySelector('.typewriter').textContent.length - 1);
+                  requestId = requestAnimationFrame(deleteChar);
+                } else {
+                  isDeleting = false;
+                  index++;
+            
+            if (index === 4 || index === 5 || index === 6) {
+              document.querySelector('.typewriter').style.color = '#ff00fc';
+            } else {
+              document.querySelector('.typewriter').style.color = '#ff00fc';
+            }
+            
+                  if (index > texts.length - 1) {
+                    index = 0;
+                  }
+                  setTimeout(function() {
+                    startTypewriter();
+                  }, typingSpeed);
+                }
+              }
+            
+              startTypewriter();
+              window.addEventListener('focus', startTypewriter);
+              window.addEventListener('blur', function() {
+                cancelAnimationFrame(requestId);
+                isTyping = false;
+                isDeleting = false;
+                document.querySelector('.typewriter').textContent = '';
+              });
+            </script>
+    </h1>
+</header>
+
+<nav>
+    <a href="#about">About Us</a>
+    <a href="#cases">Success Stories</a>
+    <a href="#services">Services</a>
+    <a href="#team">Our Team</a>
+    <a href="#contact">Contact Us</a>
+</nav>
+
+<section id="about" class="about-section">
+    <h2>About Us</h2>
+    <div>
+        <div style="flex: 1;">
+            <p>Optima AI Technology Transformation Solutions</p>
+            <p>Harnessing the power of AI, we specialize in delivering tailored solutions that drive business innovation. As a dynamic and agile team, we offer deep expertise in AI technologies and machine learning applications, crafting customized solutions that meet the specific needs of each business.</p>
+            <p>By leveraging advanced AI algorithms and machine learning models, we help companies optimize operations, enhance customer experiences, automate workflows, and unlock valuable data insights. Whether it's predictive analytics, natural language processing (NLP), or computer vision, our expertise in these fields enables businesses to make smarter decisions and improve overall efficiency.</p>
+            <p>Unlike larger corporations, we provide the flexibility to adapt quickly and offer high-quality, cost-effective solutions. This ability to personalize and deliver with precision ensures that we can meet your unique business challenges without the overhead of larger organizations.</p>
+            <p>AI is more than just a trend; it’s a powerful tool to drive business growth and transformation. With a focus on measurable results and seamless integration, our solutions empower businesses to stay ahead in a fast-evolving marketplace.</p>
+            <p>Let's collaborate to create AI-driven solutions that deliver tangible results and support your business’s long-term success.</p>
+        </div>
+        <img class="about-img" src="about-image.jpg" alt="About Us Image">
+    </div>
+</section>
+
+<section id="cases">
+    <h2>Success Stories</h2>
+    <div class="service-container">
+        <!-- Case 1 -->
+        <div class="service-item">
+            <h3>Customer Churn Prediction</h3>
+            <p><strong>Language:</strong> Python | <strong>Technology:</strong> Machine Learning (Scikit-learn)</p>
+            <p>Predictive analytics for customer churn, utilizing machine learning algorithms such as Random Forest to analyze and predict customer behavior.</p>
+            <button onclick="toggleCode('code1')">Show/Hide Code</button>
+            <pre id="code1">
+                from sklearn.model_selection import train_test_split
+                from sklearn.ensemble import RandomForestClassifier
+                from sklearn.metrics import accuracy_score
+                
+                # Preparing data
+                X = customer_data.drop('churn', axis=1)
+                y = customer_data['churn']
+                
+                # Splitting data
+                X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+                
+                # Model training
+                model = RandomForestClassifier(n_estimators=100, random_state=42)
+                model.fit(X_train, y_train)
+                
+                # Predictions and evaluation
+                y_pred = model.predict(X_test)
+                accuracy = accuracy_score(y_test, y_pred)
+                print(f'Accuracy: {accuracy}')                
+            </pre>
+        </div>
+        <!-- Case 2 -->
+        <div class="service-item">
+            <h3>Real-time Object Detection</h3>
+            <p><strong>Language:</strong> Python | <strong>Technology:</strong> Computer Vision (TensorFlow, OpenCV)</p>
+            <p>Real-time object detection in surveillance video using deep learning models, enabling accurate and efficient monitoring of critical areas.</p>
+            <button onclick="toggleCode('code2')">Show/Hide Code</button>
+            <pre id="code2">
+                import cv2
+                import tensorflow as tf
+                
+                # Load pre-trained model
+                model = tf.saved_model.load('ssd_mobilenet_v2/saved_model')
+                
+                # Load video
+                cap = cv2.VideoCapture('surveillance_video.mp4')
+                
+                while cap.isOpened():
+                    ret, frame = cap.read()
+                    if not ret:
+                        break
+                
+                    # Object detection
+                    input_tensor = tf.convert_to_tensor(frame)
+                    detections = model(input_tensor)
+                
+                    # Draw bounding boxes on objects detected
+                    for detection in detections['detection_boxes']:
+                        cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2)
+                
+                    cv2.imshow('Object Detection', frame)
+                    if cv2.waitKey(1) & 0xFF == ord('q'):
+                        break
+                
+                cap.release()
+                cv2.destroyAllWindows()                
+            </pre>
+        </div>
+        <!-- Case 3 -->
+        <div class="service-item">
+            <h3>Sentiment Analysis</h3>
+            <p><strong>Language:</strong> Python | <strong>Technology:</strong> NLP (Transformers, Hugging Face)</p>
+            <p>Leveraging advanced NLP models to analyze customer sentiment in real-time, helping businesses understand customer feedback and improve engagement.</p>
+            <button onclick="toggleCode('code3')">Show/Hide Code</button>
+            <pre id="code3">
+                from transformers import pipeline
+
+                # Load pre-trained sentiment analysis model
+                sentiment_analyzer = pipeline('sentiment-analysis')
+                
+                # Sample text
+                text = "This product is fantastic! I love it!"
+                
+                # Analyze sentiment
+                result = sentiment_analyzer(text)
+                print(result)                
+            </pre>
+        </div>
+        <!-- Case 4 -->
+        <div class="service-item">
+            <h3>Sales Prediction</h3>
+            <p><strong>Language:</strong> R | <strong>Technology:</strong> Time Series Forecasting (ARIMA)</p>
+            <p>Using time series forecasting to predict future sales, enabling better planning and inventory management for businesses.</p>
+            <button onclick="toggleCode('code4')">Show/Hide Code</button>
+            <pre id="code4">
+                library(forecast)
+
+                # Load sales data
+                sales_data <- ts(sales_data, frequency=12, start=c(2015, 1))
+                
+                # Fit ARIMA model
+                model <- auto.arima(sales_data)
+                
+                # Forecasting next 12 months
+                forecasted_values <- forecast(model, h=12)
+                plot(forecasted_values)                
+            </pre>
+        </div>
+        <!-- Case 5 -->
+        <div class="service-item">
+            <h3>Product Recommendation</h3>
+            <p><strong>Language:</strong> Python | <strong>Technology:</strong> Collaborative Filtering (Surprise Library)</p>
+            <p>Developing a collaborative filtering-based recommendation system that helps companies personalize product suggestions for users.</p>
+            <button onclick="toggleCode('code5')">Show/Hide Code</button>
+            <pre id="code5">
+                from surprise import SVD, Dataset, Reader
+                from surprise.model_selection import train_test_split
+                from surprise import accuracy
+                
+                # Load data
+                reader = Reader(line_format='user item rating timestamp', sep='\t')
+                data = Dataset.load_from_df(ratings_data[['userId', 'productId', 'rating']], reader)
+                
+                # Train-test split
+                trainset, testset = train_test_split(data, test_size=0.2)
+                
+                # Train the model
+                model = SVD()
+                model.fit(trainset)
+                
+                # Make predictions
+                predictions = model.test(testset)
+                
+                # Calculate RMSE
+                rmse = accuracy.rmse(predictions)
+                print(f'RMSE: {rmse}')                
+            </pre>
+        </div>
+        <!-- Case 6 (New) -->
+        <div class="service-item">
+            <h3>AI-Driven Chatbot</h3>
+            <p><strong>Language:</strong> Python | <strong>Technology:</strong> NLP (TensorFlow, Keras)</p>
+            <p>Implementing an AI-driven chatbot that improves customer support by understanding and responding to natural language queries effectively.</p>
+            <button onclick="toggleCode('code6')">Show/Hide Code</button>
+            <pre id="code6">
+                # Import necessary libraries
+                import tensorflow as tf
+                from tensorflow.keras.models import Sequential
+                from tensorflow.keras.layers import Dense, LSTM, Embedding, SpatialDropout1D
+                from tensorflow.keras.preprocessing.sequence import pad_sequences
+                from sklearn.preprocessing import LabelEncoder
+                import numpy as np
+                
+                # Sample data (in real application, you would load your training data here)
+                training_sentences = ["Hi", "How are you?", "What's your name?", "Tell me a joke", "Goodbye"]
+                training_labels = ["greeting", "greeting", "name_query", "joke_request", "goodbye"]
+                
+                # Preprocess data
+                encoder = LabelEncoder()
+                training_labels_encoded = encoder.fit_transform(training_labels)
+                
+                # Tokenizing the sentences
+                from tensorflow.keras.preprocessing.text import Tokenizer
+                tokenizer = Tokenizer()
+                tokenizer.fit_on_texts(training_sentences)
+                X = tokenizer.texts_to_sequences(training_sentences)
+                X = pad_sequences(X, padding='post')
+                
+                # Building the model
+                model = Sequential()
+                model.add(Embedding(input_dim=1000, output_dim=100, input_length=X.shape[1]))
+                model.add(SpatialDropout1D(0.2))
+                model.add(LSTM(100, dropout=0.2, recurrent_dropout=0.2))
+                model.add(Dense(len(set(training_labels)), activation='softmax'))
+                
+                # Compile the model
+                model.compile(loss='sparse_categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
+                
+                # Train the model (In real application, use real data and labels)
+                model.fit(X, np.array(training_labels_encoded), epochs=5, batch_size=10)
+                
+                # Sample function to predict the intent of a new sentence
+                def predict_intent(text):
+                    seq = tokenizer.texts_to_sequences([text])
+                    padded = pad_sequences(seq, maxlen=X.shape[1], padding='post')
+                    prediction = model.predict(padded)
+                    intent = encoder.inverse_transform([np.argmax(prediction)])
+                    return intent[0]
+                
+                # Testing the model with a new sentence
+                user_input = "Hello there"
+                predicted_intent = predict_intent(user_input)
+                print(f"The predicted intent for '{user_input}' is: {predicted_intent}")                
+            </pre>
+        </div>
+    </div>
+</section>
+
+<section id="services">
+    <h2>Our Services</h2>
+    <p>We offer a range of AI-driven services to help your business thrive, including:</p>
+    <ul>
+        <li>Custom AI Solutions Tailored to Your Business Needs</li>
+        <li>Predictive Analytics and Data Insights</li>
+        <li>Natural Language Processing (NLP) for Improved Customer Interaction</li>
+        <li>Computer Vision for Object Detection and Visual Analysis</li>
+        <li>Machine Learning for Automation and Workflow Optimization</li>
+    </ul>
+</section>
+
+<section id="team">
+    <h2>Our Team</h2>
+    <div class="team-container">
+        <!-- Team Member 1 -->
+        <div class="team-member">
+            <img src="amina.jpg" alt="Amina Mohammad">
+            <div>
+                <h3>Amina Mohammad</h3>
+                <p>Technical Director</p>
+                <p>Email: amina[at]optima-tech.ai</p>
+            </div>
+        </div>
+        <!-- Team Member 2 -->
+        <div class="team-member">
+            <img src="veda.jpg" alt="Veda Kannan">
+            <div>
+                <h3>Veda Kannan</h3>
+                <p>Lead Data Scientist</p>
+                <p>Email: veda[at]optima-tech.ai</p>
+            </div>
+        </div>
+        <!-- Team Member 3 -->
+        <div class="team-member">
+            <img src="member.jpg" alt="Nadiah Habib">
+            <div>
+                <h3>Nadiah Habib</h3>
+                <p>Machine Learning Specialist</p>
+                <p>Email: nadiah[at]optima-tech.ai</p>
+            </div>
+        </div>
+        <!-- Team Member 4 -->
+        <div class="team-member">
+            <img src="hyun.jpg" alt="Hyun Lee">
+            <div>
+                <h3>Hyun Lee</h3>
+                <p>Data Analysis</p>
+                <p>Email: hyun[at]optima-tech.ai</p>
+            </div>
+        </div>
+        <!-- Team Member 5 -->
+        <div class="team-member">
+            <img src="member.jpg" alt="Ran Huang">
+            <div>
+                <h3>Ran Huang</h3>
+                <p>Marketing</p>
+                <p>Email: ran[at]optima-tech.ai</p>
+            </div>
+        </div>
+        <!-- Team Member 6 -->
+        <div class="team-member">
+            <img src="member.jpg" alt="Zaki Abu">
+            <div>
+                <h3>Zaki Abu</h3>
+                <p>Project Manager</p>
+                <p>Email: zaki[at]optima-tech.ai</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-container">
+        <img src="contact-image.jpg" alt="Contact Us Image">
+        <div>
+            <div class="contact-item">
+                <h3>Singapore Office</h3>
+                <p>Amina Habib / Ting Huang</p>
+                <p>Tel: 800-150-3122, Email: sg[at]optima-tech.ai</p>
+                <p>150 Beach Rd, Gateway West, Singapore</p>
+            </div>
+            <div class="contact-item">
+                <h3>South Korea Office</h3>
+                <p>Min Kim</p>
+                <p>Tel: 308-491-0379, Email: kr[at]optima-tech.ai</p>
+            </div>
+            <div class="contact-item">
+                <h3>North America Office</h3>
+                <p>To be announced</p>
+                <p>Email: na[at]optima-tech.ai</p>
+                <p>3rd St 2nd Floor, San Francisco, CA</p>
+            </div>
+            <div class="contact-item">
+                <h3>France Office</h3>
+                <p>Caroline Pierre</p>
+                <p>Email: fr[at]optima-tech.ai</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Optima Tech AI, CASEPAY INC. All rights reserved.</p>
+</footer>
+
+<script>
+    function toggleCode(id) {
+        var codeElement = document.getElementById(id);
+        if (codeElement.style.display === "none" || codeElement.style.display === "") {
+            codeElement.style.display = "block";
+        } else {
+            codeElement.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>
