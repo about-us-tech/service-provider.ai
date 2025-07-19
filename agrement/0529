@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Temporary Branch Representative Agreement</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: auto;
+      padding: 30px;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    .section-title {
+      font-weight: bold;
+      margin-top: 20px;
+    }
+    .signature-block {
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Temporary Branch Representative Agreement</h1>
+
+  <p>This Temporary Branch Representative Agreement (“Agreement”) is entered into as of <strong>[Insert Date]</strong>, by and between:</p>
+  
+  <p><strong>Part A:</strong> ____________________________</p>
+  <p><strong>Part B:</strong> ____________________________</p>
+
+  <p class="section-title">1. Purpose</p>
+  <p>Part A engages Part B as a temporary representative to support general business communications, particularly in English-language contexts.
+  This role is intended to be collaborative and support-focused, and does not initially carry decision-making authority unless explicitly granted by Part A in writing.
+  Subject to Part A’s discretion and future needs, Part B may be considered for expanded responsibilities or delegated authority.</p>
+
+  <p class="section-title">2. Scope of Responsibilities</p>
+  <p><strong>2.1</strong> Part B may assist with:</p>
+  <ul>
+    <li>Routine communications with external contacts</li>
+    <li>Informal liaison and clarification tasks</li>
+  </ul>
+  <p><strong>2.2</strong> Part B is not expected or authorized to:</p>
+  <ul>
+    <li>Enter into contracts</li>
+    <li>Make financial or legal decisions</li>
+    <li>Act on behalf of Part A in official negotiations unless explicitly instructed in writing by Part A.</li>
+  </ul>
+  <p><strong>2.3</strong> At Part A’s discretion, and depending on performance or need, Part B may be invited to:</p>
+  <ul>
+    <li>Temporarily act as a nominee holder of shares (name only, no ownership interest)</li>
+    <li>Attend business meetings on behalf of Part A</li>
+  </ul>
+  <p>In all such cases, Part B agrees to act in good faith and in alignment with Part A’s interests and intentions.</p>
+
+  <p class="section-title">3. Assignment & Communication</p>
+  <p>Part A will notify Part B at least 1 day in advance when requesting specific support, including task details. No ongoing duties are required unless tasks are assigned.</p>
+
+  <p class="section-title">4. Compensation</p>
+  <ul>
+    <li><strong>4.1</strong> Part B will be paid USD $15/hour based on actual time worked.</li>
+    <li><strong>4.2</strong> Payment may be settled after each 8 hours accumulated, or as mutually agreed.</li>
+    <li><strong>4.3</strong> Alternatively, specific tasks may be compensated at a flat rate between USD $10–$50, depending on complexity.</li>
+    <li><strong>4.4</strong> No payment is owed unless a task is assigned and completed.</li>
+  </ul>
+
+  <p class="section-title">5. Liability and Good Faith Cooperation</p>
+  <ul>
+    <li><strong>5.1</strong> Part B will not be held responsible for business risks or outcomes relating to Part A’s operations.</li>
+    <li><strong>5.2</strong> However, both parties agree to:
+      <ul>
+        <li>Act professionally and in good faith</li>
+        <li>Avoid any unauthorized or misleading actions</li>
+        <li>Clarify roles before taking steps beyond ordinary support</li>
+      </ul>
+    </li>
+  </ul>
+
+  <p class="section-title">6. Confidentiality</p>
+  <ul>
+    <li><strong>6.1</strong> Part B agrees to keep all non-public information shared by Part A confidential.</li>
+    <li><strong>6.2</strong> This includes business information, documents, communications, and the existence or nature of this Agreement.</li>
+    <li><strong>6.3</strong> Part B should not disclose any such information to third parties without written permission from Part A.</li>
+    <li><strong>6.4</strong> Reasonable discretion and confidentiality shall be maintained even after termination.</li>
+  </ul>
+
+  <p class="section-title">7. Flexibility and Duration</p>
+  <p>This agreement is non-exclusive and non-binding long-term.  
+  Part A reserves the right to adjust, end, or replace the temporary representative arrangement at any time, depending on business needs, with no hard commitment expected from either side.</p>
+
+  <p class="section-title">8. Independent Status</p>
+  <p>This Agreement does not create an employment, partnership, or legal agency relationship. Part B is acting as an independent support resource.</p>
+
+  <p class="section-title">9. Governing Law</p>
+  <p>This Agreement shall be governed by the laws of the jurisdiction where Part B is lawfully and permanently domiciled at the time of signing, unless otherwise mutually agreed.</p>
+
+  <p class="section-title">10. Entire Understanding</p>
+  <p>This Agreement represents the complete understanding between the parties and may only be amended in writing by both sides.</p>
+
+  <div class="signature-block">
+    <p><strong>IN WITNESS WHEREOF, the parties hereby execute this Agreement:</strong></p>
+
+    <p><strong>Part A (Principal)</strong><br>
+    Name: ______________________<br>
+    Signature: ___________________<br>
+    Date: _______________________</p>
+
+    <p><strong>Part B (Temporary Representative)</strong><br>
+    Name: ______________________<br>
+    Signature: ___________________<br>
+    Date: _______________________</p>
+  </div>
+
+</body>
+</html>
